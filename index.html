@@ -9,31 +9,35 @@
 <body>
 
     <header>
-        <h1>Colombia en la King World Cup Nation 2025</h1>
-        <img src="img/kings.webp" width="30%" alt="Logo Kings World Cup">
-        <nav>
-            <ul>
-                <li><a href="#info">Información</a></li>
-                <li><a href="#resultados">Resultados</a></li>
-                <li><a href="#equipos">Selecciones invitadas</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Colombia en la King World Cup Nation 2025</h1>
+            <img src="img/kings.webp" alt="Logo Kings World Cup" class="img-principal">
+        </div>
     </header>
+
+    <nav>
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('info')">Información</button>
+            <button onclick="scrollToSection('resultados')">Resultados</button>
+            <button onclick="scrollToSection('equipos')">Selecciones invitadas</button>
+            <button onclick="scrollToSection('galeria')">Galería</button>
+            <button onclick="scrollToSection('contacto')">Contacto</button>
+        </div>
+    </nav>
 
     <main>
         <section id="info">
             <h2>Representación de Colombia en la King World Cup Nations 2025</h2>
             <p>La King World Cup Nation 2025 es un evento internacional que reúne 16 selecciones en un certamen el cual está conformado por 7 vs 7 en el deporte de fútbol. Este evento es realizado por Gerard Piqué y algunas asociaciones.</p>
             <p>La tricolor está siendo representada por figuras como James Rodríguez y algunos streamers colombianos como Pelicanger, Westcol y Juan Guarnizo, quienes están dejando huella en este evento deportivo.</p>
-            <img src="img/colombia.png" class="img-responsive" alt="Imagen de fútbol"> 
+            <img src="img/colombia.png" width="100%" class="img-responsive" alt="Imagen de fútbol"> 
+
         </section>
 
         <section id="resultados">
             <h2>Resultados</h2>
+            <p>Fechas y resultados de nuestra tricolor en la King World Cup Nation 2025</p>
             <table>
-                <p>Fechas y resultados de nuestra tricolor en la King World Cup Nation 2025</p>
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -59,6 +63,22 @@
                     </tr>
                 </tbody>
             </table>
+            
+            <h2>La Selección Colombia VS Marruecos</h2>
+            <p>La selección Colombia se enfrento a Marruecos en su primera ronda</p>
+            <img src="img/westcol.jpg" width="100%" alt="Imagen de fútbol"> 
+            <p>Colombia debutó con una sólida victoria 4-1 sobre Marruecos en la Kings World Cup Nations 2025, torneo que se juega en Italia y cuenta con transmisión de Disney+ Premium. La Tricolor, dirigida por Sergio Verdirame, fue ampliamente superior y dejó claras sus aspiraciones en el certamen.</p>
+            <p>Desde el inicio, Colombia tomó el control.</p>
+            <h2>La Selección Colombia VS Turquia</h2>
+            <p>La selección Colombia se enfrento a Turquia en su segunda ronda</p>
+            <img src="img/ColVSTur.jpg" width="100%" alt="Imagen de fútbol"> 
+            <p>Colombia se clasificó a los cuartos de final de vencer por 3-2 a Turquía en la segunda ronda de la Kings World Cup Nations 2025, torneo que se juega en Italia y cuenta con transmisión de Disney+ Premium</p>
+            <p>La Tricolor, dirigida por Sergio Verdirame tuvo el mensaje de aliento de James Rodríguez antes del inicio del juego y luego en la cancha fue de menos a más, siempre teniendo como figura a su portero Camilo Mena, quien fue el mejor del encuentro evitando que los turcos tomarán más ventaja en el tablero.</p>
+            <h2>La Selección Colombia VS Uzbekistan</h2>
+            <p>La selección Colombia se enfrento a uzbekistan la cual vencio y paso a semifinal</p>
+            <img src="img/ColVSUzb.jpg" width="100%" alt="Imagen de fútbol"> 
+            <p>Colombia fue muy superior a Uzbekistán en los cuartos de final de la Kings World Cup Nations 2025 y tras golear por 6-1 se instaló en las semifinales del certamen.</p>
+        
         </section>
 
         <section id="equipos">
@@ -97,6 +117,38 @@
                         <td><img src="img/alemania.webp" alt="Alemania" width="50"></td>
                         <td>Alemania</td>
                     </tr>
+                    <tr>
+                        <td><img src="img/brasil.webp" alt="Brasil" width="50"></td>
+                        <td>Brasil</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/marruecos.webp" alt="Marruecos" width="50"></td>
+                        <td>Marruecos<td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/ksa.webp" alt="kasajistan" width="50"></td>
+                        <td>kasajistan</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/ucrania.webp" alt="ucrania" width="50"></td>
+                        <td>ucrania</td>
+                        <tr>
+                            <td><img src="img/korea.webp" alt="Corea" width="50"></td>
+                            <td>Corea</td>
+                            <tr>
+                                <td><img src="img/peru.webp" alt="Peru" width="50"></td>
+                                <td>Perú</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/turquia.webp" alt="Turquia" width="50"></td>
+                                <td>Turquia</td>
+                                <tr>
+                                    <td><img src="img/uzb.webp" alt="Uzbekistan" width="50"></td>
+                                    <td>Uzbekistan</td>
+                                </tr>
+                            </tr>
+                        </tr>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -106,14 +158,8 @@
             <div class="galeria">
                 <img src="img/representantes.jpg" alt="Representantes" class="galeria-imagen" onclick="verImagen(this)">
                 <img src="img/copa.jpg" alt="Copa" class="galeria-imagen" onclick="verImagen(this)">
-                <img src="img/colombiavsmarruecos.jpg" alt="Copa" class="galeria-imagen" onclick="verImagen(this)">
-                <img src="img/ColVSTur.jpg" alt="Copa" class="galeria-imagen" onclick="verImagen(this)">
-                <img src="img/westcol.jpg" alt="Copa" class="galeria-imagen" onclick="verImagen(this)">
-                <img src="img/ColVSUzb.jpg" alt="Copa" class="galeria-imagen" onclick="verImagen(this)">
             </div>
-            <div id="modal" class="modal" onclick="cerrarModal()">
-                <img id="modalImagen" src="" alt="Imagen ampliada">
-            </div>
+
         </section>
 
         <section id="comentarios">
@@ -141,15 +187,35 @@
         </section>
 
         <button id="btnMostrarInfo" onclick="toggleInfo()">Mostrar Información Adicional</button>
-        <p id="infoAdicional" style="display: none;">Brasil y Colombia disputarán la final de la Kings World Cup Nations 2025 en Turín
-            El Allianz Stadium será testigo de una histórica final entre las dos potencias sudamericanas.</p>
+        <p id="infoAdicional" style="display: none;">Brasil y Colombia disputarán la final de la Kings World Cup Nations 2025 en Turín. El Allianz Stadium será testigo de una histórica final entre las dos potencias sudamericanas.</p>
+
+        <footer>
+            <p>&copy; 2025 King League Cup Nation 2025. Todos los derechos reservados.</p>
+        </footer>
     </main>
 
-    <footer>
-        <p>&copy; 2025 King League Cup Nation 2025. Todos los derechos reservados.</p>
-    </footer>
-
     <script>
+    
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+
+        function verImagen(imagen) {
+            var modal = document.getElementById("modal");
+            var modalImg = document.getElementById("modalImagen");
+            modal.style.display = "block";
+            modalImg.src = imagen.src;
+        }
+
+        function cerrarModal() {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+        }
+
         function toggleInfo() {
             var info = document.getElementById("infoAdicional");
             if (info.style.display === "none") {
@@ -158,10 +224,20 @@
                 info.style.display = "none";
             }
         }
+
+        function agregarComentario(event) {
+            event.preventDefault();
+
+            const comentario = document.getElementById("comentario").value;
+
+            const nuevoComentario = document.createElement("li");
+            nuevoComentario.textContent = comentario;
+
+            const listaComentarios = document.getElementById("listaComentarios");
+            listaComentarios.appendChild(nuevoComentario);
+
+            document.getElementById("comentario").value = '';
+        }
+
         window.onload = function() {
             alert("¡Bienvenido a la página de Colombia en la King World Cup Nation 2025!");
-        };
-    </script>
-
-</body>
-</html>
